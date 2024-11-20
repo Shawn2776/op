@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { Outfit } from "next/font/google";
 import { ClerkProvider, SignedIn, SignedOut, SignIn } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
 
@@ -13,6 +14,7 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const outfit = Outfit({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata = {
   title: "NIC Adventure Center",

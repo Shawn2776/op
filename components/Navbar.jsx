@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex justify-between items-center py-5 shadow-sm border-b-[1px]">
+    <nav className="w-full flex justify-between items-center py-2 shadow-sm border-b-[1px]">
       <div className="ml-10">
         <Image src="/logo2.png" alt="logo" width={100} height={100} />
       </div>
