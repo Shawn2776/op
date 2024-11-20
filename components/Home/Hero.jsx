@@ -6,8 +6,10 @@ const Hero = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
       <div>
-        <h2 className="text-2xl md:6xl font-bold">Watersport Rentals</h2>
-        <h3 className="text-lg md:text-4xl text-gray-500 pr-20 mt-5">
+        <h2 className="text-[40px] md:text-[60px] font-bold">
+          Watersport Rentals
+        </h2>
+        <h3 className="text-[20px] text-gray-500 pr-20 mt-5">
           NIC Adventure Center offers convenient rentals and activities like
           kayaking, paddleboarding, and sailing.
         </h3>
