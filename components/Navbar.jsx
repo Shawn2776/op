@@ -5,11 +5,11 @@ import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex justify-between items-center">
+    <nav className="w-full flex justify-between items-center py-5 shadow-sm border-b-[1px]">
       <div className="ml-10">
-        <Image src="/logo2.png" alt="logo" width={200} height={200} />
+        <Image src="/logo2.png" alt="logo" width={100} height={100} />
       </div>
-      <div className="flex gap-4">
+      <div className="md:flex gap-4 hidden">
         <h2>
           <Button variant="link">
             <span className="text-xl">Home</span>
