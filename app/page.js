@@ -5,7 +5,6 @@ import Hero from "@/components/Home/Hero";
 import SearchInput from "@/components/Home/SearchInput";
 import { getEquipmentList } from "@/services";
 import { UserButton } from "@clerk/nextjs";
-import Image from "next/image";
 import { useEffect } from "react";
 
 export default function Home() {
