@@ -4,15 +4,17 @@ export const getEquipmentList = async () => {
   const query = gql`
     query EquipmentList {
       equipmentLists {
-        equipmentName
         hourlyPublicRate
         hourlyStudentRate
+        id
+        updatedAt
+        image {
+          url
+        }
+        equipmentName
+        season
         dailyPublicRate
         dailyStudentRate
-        id
-        image {
-          fileName
-        }
       }
     }
   `;
