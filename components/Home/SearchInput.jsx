@@ -1,6 +1,7 @@
 import { IoLocationSharp } from "react-icons/io5";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { Input } from "@/components/ui/input";
+import { DatePicker } from "./DatePicker";
 
 const SearchInput = () => {
   return (
@@ -10,20 +11,18 @@ const SearchInput = () => {
       </h2>
       <div className="flex gap-24 justify-center">
         <div className="flex bg-gray-100 gap-10 divide-x-2 p-2 px-5 rounded-full">
-          <div className="flex items-center gap-2">
-            <IoLocationSharp size={30} className="text-gray-400" />
+          {/* Location Input */}
+          <div className="flex items-center">
+            <IoLocationSharp className="text-gray-500" size={25} />
             <Input
               type="text"
               placeholder="Location"
-              className="p-2 outline-none bg-white"
+              className="pl-10 p-2 outline-none bg-white"
             />
           </div>
           <div className="flex items-center gap-2 pl-10">
-            <FaRegCalendarAlt size={30} className="text-gray-400" />
-            <input
-              type="date"
-              className="p-2 outline-none bg-white text-gray-400"
-            />
+            {/* <FaRegCalendarAlt className="text-gray-500" size={20} /> */}
+            <DatePicker />
           </div>
         </div>
       </div>
